@@ -28,7 +28,7 @@ with open(sql, "r", encoding="utf-8", errors="replace") as f1:
                 continue
             create_indices()
             table = m[1]
-            f2.write(f"\n.print importing \\'{table}.tsv\\'...\n")
+            f2.write(f"\n.print importing {table}.tsv ...\n")
             f2.write(line)
             while (line := next(f1)) and line.startswith("/*"):
                 pass

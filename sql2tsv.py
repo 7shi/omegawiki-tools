@@ -112,7 +112,13 @@ def read_sql(stream):
         for value in values:
             yield (table, value)
 
-def main():
+def process_sql_file(file_stream, tsv_files):
+    for table, values in read_sql(file_stream):
+        if table not in tsv_files:
+            tsv_files[table] = open(f"{table}.tsv", "w", encoding="utf-8", newline="\n")
+        tsv_files[table].write("\t".join(values) + "\n")
+
+if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='Convert SQL file to TSV format')
     parser.add_argument('sql_file', help='SQL file (can be .sql or .sql.gz)')
@@ -135,13 +141,3 @@ def main():
         # Close all open files
         for file in tsv_files.values():
             file.close()
-
-def process_sql_file(file_stream, tsv_files):
-    for table, values in read_sql(file_stream):
-        if table not in tsv_files:
-            tsv_files[table] = open(f"{table}.tsv", "w", encoding="utf-8", newline="\n")
-
-        tsv_files[table].write("\t".join(values) + "\n")
-
-if __name__ == "__main__":
-    main()
