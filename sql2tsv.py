@@ -1,5 +1,3 @@
-import gzip
-
 def read_string(src, pos):
     """Parse a string enclosed in single quotes"""
     length = len(src)
@@ -112,12 +110,6 @@ def read_sql(stream):
         for value in values:
             yield (table, value)
 
-def process_sql_file(file_stream, tsv_files):
-    for table, values in read_sql(file_stream):
-        if table not in tsv_files:
-            tsv_files[table] = open(f"{table}.tsv", "w", encoding="utf-8", newline="\n")
-        tsv_files[table].write("\t".join(values) + "\n")
-
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='Convert SQL file to TSV format')
@@ -131,12 +123,11 @@ if __name__ == "__main__":
     tsv_files = {}
 
     try:
-        if target.endswith(".gz"):
-            with gzip.open(target, 'rb') as f:
-                process_sql_file(f, tsv_files)
-        else:
-            with open(target, 'r', encoding='utf-8', errors='ignore') as f:
-                process_sql_file(f, tsv_files)
+        with open(target, 'r', encoding='utf-8', errors='ignore') as f:
+            for table, values in read_sql(f):
+                if table not in tsv_files:
+                    tsv_files[table] = open(f"{table}.tsv", "w", encoding="utf-8", newline="\n")
+                print(*values, file=tsv_files[table], sep="\t")
     finally:
         # Close all open files
         for file in tsv_files.values():
