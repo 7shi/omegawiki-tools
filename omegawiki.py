@@ -4,7 +4,6 @@ conn, cur = None, None
 
 def open_db(db):
     global conn, cur
-    with open(db, "rb") as f: pass
     conn = sqlite3.connect(db)
     cur  = conn.cursor()
 
@@ -64,14 +63,18 @@ if __name__ == "__main__":
     db, langs = args.db, args.langs
 
     open_db(db)
-    lid, *lids = [language_id(l) for l in langs]
-    if not lid:
-        print("not found:", langs[0])
-        exit(0)
+    lids = []
+    for lang in langs:
+        lid = language_id(lang)
+        if not lid:
+            print("language not found:", lang)
+        lids.append(lid)
+    if None in lids:
+        exit(1)
 
-    names = [language_name(l, l) for l in [lid] + lids]
+    names = [language_name(lid, lid) for lid in lids]
     print("\t".join(names))
-    for xid, spell in sorted(all_words(lid), key=lambda x: x[1].lower()):
+    for xid, spell in sorted(all_words(lids[0]), key=lambda x: x[1].lower()):
         mid = meaning_id(xid)
-        words = [str(get_word(mid, l)[1]) for l in lids]
+        words = [str(get_word(mid, lid)[1]) for lid in lids[1:]]
         print("\t".join([spell] + words))
