@@ -1,4 +1,4 @@
-import sqlite3, os, sys
+import sqlite3
 
 conn, cur = None, None
 
@@ -55,21 +55,23 @@ def get_word(mid, lid):
     return result if result else (None, "")
 
 if __name__ == "__main__":
-    try:
-        db, *langs = sys.argv[1:]
-    except:
-        sys.stderr.write(f"usage: {sys.argv[0]} db lang\n")
-        exit(1)
+    import argparse
+    parser = argparse.ArgumentParser(description='OmegaWiki database query tool')
+    parser.add_argument('db', help='database file')
+    parser.add_argument('langs', nargs='+', help='language codes')
+    args = parser.parse_args()
+    
+    db, langs = args.db, args.langs
 
     open_db(db)
     lid, *lids = [language_id(l) for l in langs]
     if not lid:
-        print("not found:", lang)
+        print("not found:", langs[0])
         exit(0)
 
     names = [language_name(l, l) for l in [lid] + lids]
     print("\t".join(names))
-    for xid, spell in sorted(all_words(lid), key=lambda x:x[1].lower()):
+    for xid, spell in sorted(all_words(lid), key=lambda x: x[1].lower()):
         mid = meaning_id(xid)
         words = [str(get_word(mid, l)[1]) for l in lids]
         print("\t".join([spell] + words))

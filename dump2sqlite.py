@@ -1,12 +1,13 @@
-import re, sys
-try:
-    sql = sys.argv[1]
-    if not sql.endswith(".sql"):
-        raise Exception("not sql: " + sql)
-except Exception as e:
-    sys.stderr.write(f"{e}\n")
-    sys.stderr.write(f"usage: {sys.argv[0]} sql\n")
-    exit(1)
+import re, argparse
+
+parser = argparse.ArgumentParser(description='Convert SQL dump to SQLite format')
+parser.add_argument('sql', help='Input SQL file')
+args = parser.parse_args()
+
+sql = args.sql
+if not sql.endswith('.sql'):
+    parser.error('Input file must have .sql extension')
+
 with open(sql, "r", encoding="utf-8", errors="replace") as f1:
     with open(sql[:-4] + "-sqlite.sql", "w", encoding="utf-8") as f2:
         f2.write(f"-- convert from {sql}\n");
