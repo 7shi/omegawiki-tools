@@ -39,19 +39,17 @@ def all_words(lid):
         SELECT expression_id, spelling FROM uw_expression WHERE language_id = ?
         """, (lid,))
 
-def meaning_id(xid):
-    result = cur.execute("""
+def meaning_ids(xid):
+    return [row[0] for row in cur.execute("""
         SELECT defined_meaning_id FROM uw_syntrans WHERE expression_id = ?
-        """, (xid,)).fetchone()
-    return result[0] if result else None
+        """, (xid,))]
 
-def get_word(mid, lid):
-    result = cur.execute("""
-        SELECT uw_syntrans.expression_id, spelling FROM uw_syntrans
+def get_words(mid, lid):
+    return [str(row[0]) for row in cur.execute("""
+        SELECT spelling FROM uw_syntrans
         INNER JOIN uw_expression ON uw_syntrans.expression_id = uw_expression.expression_id
         WHERE defined_meaning_id = ? AND language_id = ?
-        """, (mid, lid)).fetchone()
-    return result if result else (None, "")
+        """, (mid, lid))]
 
 if __name__ == "__main__":
     import argparse
@@ -75,6 +73,13 @@ if __name__ == "__main__":
     names = [language_name(lid, lid) for lid in lids]
     print("\t".join(names))
     for xid, spell in sorted(all_words(lids[0]), key=lambda x: x[1].lower()):
-        mid = meaning_id(xid)
-        words = [str(get_word(mid, lid)[1]) for lid in lids[1:]]
-        print("\t".join([spell] + words))
+        mids = meaning_ids(xid)
+        words = [
+            "; ".join(
+                words
+                for mid in mids
+                if (words := ", ".join(get_words(mid, lid)))
+            )
+            for lid in lids[1:]
+        ]
+        print(spell, *words, sep="\t")
