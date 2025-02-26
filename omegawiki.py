@@ -35,7 +35,7 @@ def langcode(lid):
         """, (lid,)).fetchone()
 
 def all_words(lid):
-    return conn.cursor().execute("""
+    return cur.execute("""
         SELECT expression_id, spelling FROM uw_expression WHERE language_id = ?
         """, (lid,))
 
