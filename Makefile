@@ -3,8 +3,8 @@ all:
 	rm -f omegawiki.db
 	sqlite3 omegawiki.db ".read omegawiki-lexical-sqlite.sql"
 
-down:
+download:
 	wget -c --waitretry=5 http://www.omegawiki.org/downloads/omegawiki-lexical.sql.gz
 
 upload:
-	#uv run huggingface-cli upload --repo-type=dataset n7shi/OmegaWiki filename
+	huggingface-cli upload --repo-type=dataset n7shi/OmegaWiki $(FILENAME)
