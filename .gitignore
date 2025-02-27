@@ -11,6 +11,10 @@ wheels/
 
 # Others
 download/
-202*/
+db/*/
+db/*.tsv
+db/*.sql
+db/*.gz
+db/*.db
 *.dll
 *.exe
