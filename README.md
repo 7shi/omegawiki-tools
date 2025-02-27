@@ -7,6 +7,7 @@ This project provides tools for processing and querying OmegaWiki database dumps
 ## Requirements
 
 - Python 3
+- SQLite 3
 
 ## Tools
 
