@@ -18,7 +18,7 @@ class TestSql2Tsv(unittest.TestCase):
         result = read_string(src, 6)
         self.assertIsNotNone(result)
         s, pos = result
-        self.assertEqual(s, "c'd")  # Adjusting expected result to match actual implementation
+        self.assertEqual(s, "c'd")
         self.assertEqual(pos, 12)
     
     def test_read_value(self):
@@ -60,7 +60,7 @@ class TestSql2Tsv(unittest.TestCase):
         result = read_value(src, 8)
         self.assertIsNotNone(result)
         s, pos = result
-        self.assertEqual(s, "c'd")  # Adjusting expected result to match actual implementation
+        self.assertEqual(s, "c'd")
         self.assertEqual(pos, 14)
     
     def test_read_values(self):
@@ -78,14 +78,14 @@ class TestSql2Tsv(unittest.TestCase):
         result = read_values(src, 0)
         self.assertIsNotNone(result)
         values, pos = result
-        self.assertEqual(values, ["1", "a,b", "c'd"])  # Adjusting expected result to match actual implementation
+        self.assertEqual(values, ["1", "a,b", "c'd"])
         self.assertEqual(pos, 16)
     
     def test_read_all_values(self):
         """Test for read_all_values function"""
         src = r"(1,2,3),(1,'a,b','c\'d')"
         values = read_all_values(src, 0)
-        self.assertEqual(values, [["1", "2", "3"], ["1", "a,b", "c'd"]])  # Adjusting expected result to match actual implementation
+        self.assertEqual(values, [["1", "2", "3"], ["1", "a,b", "c'd"]])
     
     def test_read_sql(self):
         """Test for read_sql function"""
@@ -114,7 +114,6 @@ INSERT INTO `table` VALUES (1,'a,b','c\\'d');
         table3, values3 = results[2]
         print(f"Debug - values3: {values3}")
         self.assertEqual(table3, "table")
-        # Set expected values based on debug results
         self.assertEqual(values3, ["1", "a,b", "c'd"])
 
 if __name__ == "__main__":
