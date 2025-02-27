@@ -12,4 +12,5 @@ wheels/
 # Others
 202*/
 down/
-fsharp/
+*.dll
+*.exe
