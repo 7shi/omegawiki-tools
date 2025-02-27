@@ -62,12 +62,12 @@ if __name__ == "__main__":
 
     open_db(db)
     lids = []
+    unknowns = []
     for lang in langs:
         lid = language_id(lang)
-        if not lid:
-            print("language not found:", lang)
-        lids.append(lid)
-    if None in lids:
+        (lids if lid else unknowns).append(lid)
+    if unknowns:
+        print("Unknown language(s):", ", ".join(unknowns))
         exit(1)
 
     names = [language_name(lid, lid) for lid in lids]
