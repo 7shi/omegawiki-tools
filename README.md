@@ -4,6 +4,10 @@ OmegaWiki was a collaborative multilingual dictionary project (now discontinued)
 
 This project provides tools for processing and querying OmegaWiki database dumps.
 
+Detailed description (in Japanese)
+
+- https://qiita.com/7shi/items/94fc7418051e50eb68eb
+
 ## Requirements
 
 - Python 3 (no additional libraries required)
