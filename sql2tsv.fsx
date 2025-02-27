@@ -14,7 +14,8 @@ let readString (src:string) pos =
             if not (ch = '"' || ch = '\'' || ch = '\\') then
                 sb.Append '\\' |> ignore
         if pos < length then
-            sb.Append src.[pos] |> ignore
+            let s = match src.[pos] with '\t' -> @"\t" | ch -> ch.ToString()
+            sb.Append s |> ignore
             pos <- pos + 1
     if pos < length && src.[pos] = '\'' then pos <- pos + 1
     Some (sb.ToString(), pos)
@@ -102,9 +103,11 @@ let readSql (stream:TextReader) = seq {
         line <- stream.ReadLine()
         not (isNull line)
     while read() do
-        if line.StartsWith("INSERT INTO ") then
-            let p = line.IndexOf "VALUES ("
-            if p >= 0 then yield! readAllValues line (p + 7) }
+        if not <| line.StartsWith "INSERT INTO `" then () else
+        let table = line.[13 .. line.IndexOf("`", 13) - 1]
+        let p = line.IndexOf "VALUES ("
+        if p < 0 then () else
+        for value in readAllValues line (p + 7) -> table, value }
 
 #if TEST
 do
@@ -123,14 +126,15 @@ let target = Array.last args
 if not (target.EndsWith ".sql" || target.EndsWith ".sql.gz") then
     printfn "usage: sql2tsv sql[.gz]"
     exit 1
-let tsv = target.[.. target.LastIndexOf ".sql"] + "tsv"
+let tsv = System.Collections.Generic.Dictionary<string, StreamWriter>()
 do
     use sr =
         if target.EndsWith ".sql" then new StreamReader(target) else
         let fs = new FileStream(target, FileMode.Open)
         let gs = new GZipStream(fs, CompressionMode.Decompress)
         new StreamReader(gs)
-    use sw = new StreamWriter(tsv)
-    sw.NewLine <- "\n"
-    for values in readSql sr do
-        sw.WriteLine(String.concat "\t" values)
+    for table, values in readSql sr do
+        if not <| tsv.ContainsKey table then
+            tsv.[table] <- new StreamWriter(table + ".tsv", NewLine = "\n")
+        tsv.[table].WriteLine(String.concat "\t" values)
+for sw in tsv.Values do sw.Dispose()
