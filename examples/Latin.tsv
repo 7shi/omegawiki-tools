@@ -120,7 +120,7 @@ Angelopolis	Los Angeles	Los Ángeles	Los Angeles	Los Angeles, City of Angels	ロ
 anguilla	anguilla	anguila, angula, angula	anguille	eel	鰻, ウナギ
 angustus	stretto	estrecho, estrecha	étroit	narrow	狭い
 aniba	mango, mangifera indica	mango, árbol de mango	manguier	mango, mango tree	マンゴー
-anima	anima; psiche, anima	alma; alma	âme; âme	soul; soul	魂, 霊
+anima	anima; psiche, anima	alma; alma	âme; âme	soul; soul	魂, 霊; 
 anniversarie	annualmente	anualmente	annuellement	annually	
 Anno Domini	a.C., avanti Cristo; dopo Cristo, d.C., d. C., Anno Domini	antes de Cristo; después de Cristo	avant Jésus-Christ, av. J.-C.; Anno Domini, après Jésus-Christ, ap. J.-C.	Before Christ, BC, B. C., B.C., BCE, Before the Common Era; Anno Domini, AD, A.D., CE, Common Era	
 annotatio	annotazione	anotación	annotation	annottation, annotation	
@@ -131,7 +131,7 @@ anser	oca	ánsar, ganso, oca	oie	goose	ガチョウ, 鵝鳥
 ante	prima, innanzi	antes	avant	before	前に
 ante Christum	a.C., avanti Cristo	antes de Cristo	avant Jésus-Christ, av. J.-C.	Before Christ, BC, B. C., B.C., BCE, Before the Common Era	
 Ante litteram	ante litteram	ante litteram	avant la lettre	forerunner	
-ante meridiem	di mattina; a.m., antimeridiano	AM, ante merídiem, a.m.	du matin	AM, a.m., A.M.	午前
+ante meridiem	di mattina; a.m., antimeridiano	; AM, ante merídiem, a.m.	; du matin	; AM, a.m., A.M.	; 午前
 ante victoriam ne canas triumphum	non dire gatto se non ce l'hai nel sacco	no vender la piel del oso antes de cazarlo, no contar los pollos antes de nacer	il ne faut pas vendre la peau de l’ours avant de l’avoir tué	don't count your chickens before they're hatched	捕らぬ狸の皮算用
 Antependium	paliotto		antependium	Antependium, antependium	
 antependium	paliotto		antependium	Antependium, antependium	
@@ -187,7 +187,7 @@ ars	arte; mestiere, professione	arte; profesión	art; profession, métier, profe
 ars athletica	atletismo, atletica	atletismo	athlétisme		運動競技
 arsenicum	arsenico	arsénico	arsenic	arsenic	ヒ素, 砒素
 artifex	artigiano	artífice	artisan	artificer, craftsman, artisan	
-artificium	artificio; mestiere, professione	artificio; profesión	artifice; profession, métier, profession	artifice; profession	職業
+artificium	artificio; mestiere, professione	artificio; profesión	artifice; profession, métier, profession	artifice; profession	; 職業
 artium baccalaureus			baccalauréat en arts, baccalauréat ès arts	Bachelor of Arts, B.A., A.B., BA, AB	
 artkafa kemiği	osso occipitale	hueso occipital	os occipital	occipital bone	
 Ascensio Domini	Ascensione	Ascensión	Ascension du Seigneur, Ascension du Christ, Ascension, jeudi de l'Ascension, jour de l'Ascension	Ascension Day, Ascension, Ascension of the Lord	キリストの昇天
@@ -202,7 +202,7 @@ ater	nero	negro	noir	black	黒い
 athleta	atleta	deportista, atleta, atleta	athlète, athlète	athlete, jock	
 attollo	boa	boya, baliza	balise, bouée	buoy	ブイ, 浮標
 aucella	pulcino, uccellino	polluelo, pichón	oisillon, poussin	nestling, chick, fledgling	雛
-audacia	audacia, temerarietà	audacia; temeridad	audace; impudence, témérité	audacity, audaciousness, temerity; temerity, impudence	
+audacia	audacia, temerarietà; 	audacia; temeridad	audace; impudence, témérité	audacity, audaciousness, temerity; temerity, impudence	
 audire	sentire, ascoltare	oír	entendre, ouïr	hear	聞く
 augurium	presagio, augurio	presagio, augurio	présage, augure, auspice	omen, augury, portent, abodance, portending, abode, foreboding, forboding, abodement, aboding	
 augustus	agosto; agosto	agosto; agosto	août, aout; août, aout	August; August	八月, 葉月, 8月; 八月, 葉月, 8月
@@ -300,7 +300,7 @@ caecigenus
 caecitas	cecità	ceguera	cécité, aveuglement, ablepsie	blindness, cecity, sightlessness, ablepsy, ablepsia	盲目
 caecus	cieco	ciego	aveugle	blind	盲目
 caedes	massacro, carneficina	masacre, carnicería	massacre, bain de sang, hécatombe, boucherie	massacre, bloodbath, slaughter, carnage, butchery, bloodshed, blood bath	大虐殺
-caelum	cielo; cielo	cielo; cielo	ciel; ciel	heaven, sky; sky	空
+caelum	cielo; cielo	cielo; cielo	ciel; ciel	heaven, sky; sky	; 空
 caeruleus	azzurro, blu	azul	bleu	blue	青
 caesium	cesio	cesio	césium	caesium	セシウム
 calamarius	astuccio	cartuchera, estuche, estuche escolar	trousse, trousse d'écolier, trousse à crayons, cassette, cassette d'écolier, plumier	pencil case, pencil box	筆箱
@@ -311,7 +311,7 @@ calibra	calibro	calibre	calibre	caliber	口径
 calidarium	calidarium, calidario		caldarium	caldarium, calidarium	
 calidoscopium	caleidoscopio	caleidoscopio	kaléidoscope	kaleidoscope	万華鏡
 californium	californio	californio	californium	californium	カリホルニウム
-calva	cranio; calotta cranica	cráneo; cráneo, calota, bóveda craneal	crâne; calotte crânienne	skull; skullcap, skull cap, calvaria, calva	頭蓋骨
+calva	cranio; calotta cranica	cráneo; cráneo, calota, bóveda craneal	crâne; calotte crânienne	skull; skullcap, skull cap, calvaria, calva	頭蓋骨; 
 calvaria	calotta cranica	cráneo, calota, bóveda craneal	calotte crânienne	skullcap, skull cap, calvaria, calva	
 calvus	calvo	calvo	chauve	bald	禿
 calx	tallone	talón	talon	heel	踵
@@ -325,13 +325,13 @@ candela	candela	vela, candela, bujía	bougie, chandelle	candle	ろうそく
 canere	cantare	cantar	chanter	sing	歌う
 Canes Venatici	Cani da Caccia	Canes Venatici	Chiens de chasse	Canes Venatici	
 cantare	cantare	cantar	chanter	sing	歌う
-cantor	cantante; cantante	cantante; cantor, cantante	chanteur, chantre; chanteur	singer, vocalist; singer, vocalist, singer	歌手
+cantor	cantante; cantante	cantante; cantor, cantante	chanteur, chantre; chanteur	singer, vocalist; singer, vocalist, singer	歌手; 
 Cantorix	Assurancetourix	Asurancetúrix	Assurancetourix	Cacofonix	
 cantrix	cantante, chanteuse, sciantosa	cantora, cantante	chanteuse	singer	
 capio	prendere	tomar, acercar	prendre, rapprocher	take	運ぶ
 capitalismus	capitalismo	capitalismo	capitalisme	capitalism, capitalist economy	資本主義
 capitellum	capitello	capitel	chapiteau	capital	
-capra	capra; capra	cabro, chivo, cabra; cabra	chèvre; chèvre	goat, domestic goat; goat	山羊, ヤギ
+capra	capra; capra	cabro, chivo, cabra; cabra	chèvre; chèvre	goat, domestic goat; goat	山羊, ヤギ; 
 caput	testa	cabeza, mente	tête	head	頭
 carate	karate	karate	karaté	karate	空手道, 空手
 carbo	carbone	carbón	charbon	coal	石炭
@@ -342,8 +342,8 @@ Carmana	Kerman	Kermán	Kerman	Kerman
 carmen	canzone	canción	chanson	song	歌, 歌曲
 carota	carota	zanahoria	carotte	carotte, carrot, have a slash	ニンジン
 carpa	carpa; carpa	carpa; carpa	carpe, carpe commune; carpe, cyprinidé	carp, Common carp, common carp, European carp; carp	コイ; 鯉, コイ
-carpus	polsa, polso	muñeca	poignet; carpus	wrist; carpus	手首
-carus	caro, costoso; amato, caro	caro, costoso, oneroso, cara; querido, querida	couteux, cher, coûteux, reuch; cher, aimé, chéri	costly, expensive, dear; dear, loved	高い
+carpus	polsa, polso; 	muñeca; 	poignet; carpus	wrist; carpus	手首; 
+carus	caro, costoso; amato, caro	caro, costoso, oneroso, cara; querido, querida	couteux, cher, coûteux, reuch; cher, aimé, chéri	costly, expensive, dear; dear, loved	高い; 
 carō	carne	carne	viande	meat, flesh	肉
 Casmeria	Kashmir	Cachemira	Cachemire	Kashmir	カシミール
 cassuvium	anacardio, anacardo	anacardo	anacardier, cajou	cashew, acajou	カシュー
@@ -356,7 +356,7 @@ casus obliquus	caso obliquo	caso oblicuo, caso objetivo	cas régime, cas oblique
 casus rectus	caso nominativo	nominativo, caso nominativo	cas nominatif, cas sujet	nominative case, nominative, subjective case	主格
 Cataria	Qatar	Qatar	Qatar, État du Qatar	Qatar, State of Qatar	カタール
 categoria	cartella, cartellina, portadocumenti	carpeta, fólder	chemise	folder, file folder	フォルダ
-cathedra	sedia; cattedra	silla	chaise; cathèdre	chair; cathedra, bishop's throne	椅子, 椅子
+cathedra	sedia; cattedra	silla; 	chaise; cathèdre	chair; cathedra, bishop's throne	椅子, 椅子; 
 catheter	catetere	catéter	cathéter	catheter	カテーテル
 catillus	piatto	plato	assiette	plate	皿
 cattus	ghatto, gatto, micio	gato, gata	chat, minou	cat	猫
@@ -365,7 +365,7 @@ cauda	coda	cola	queue	tail	尾, 尻尾
 causa	causa	causa, motivo	cause	cause	原因
 Cautus	avveduto	sensato, sensata	circonspect	canny	
 cavare	scavare	cabar, excavar, cavar	creuser	dig	掘る
-cavea	gabbia per uccelli, gabbia per gli uccelli; cavea	jaula, alcahaz	cage d'oiseaux; cavea	birdcage; cavea	鳥かご, 鳥篭
+cavea	gabbia per uccelli, gabbia per gli uccelli; cavea	jaula, alcahaz; 	cage d'oiseaux; cavea	birdcage; cavea	鳥かご, 鳥篭; 
 caveat emptor	stia in guardia il compratore, Caveat emptor	cuidado por parte del comprador, no se admiten devoluciones	avertissement au consommateur	let the buyer beware, caveatemptor	
 cavitas nasi	fossa nasale, cavità nasale	fosa nasal	cavité nasale, fosse nasale	nasal cavity, nasal fossa	鼻腔
 cenare	mangiare	comer, ingerir, alimentarse	manger, consommer, avaler, bouffer	eat, consume, swallow	食べる, 食う, 召し上がる, 頂く, 食事する
@@ -491,7 +491,7 @@ corpus	corpo	cuerpo	corps	body, organic structure, physical structure, organic s
 corruptus	corrotto	corrupto, corrupta	corrompu	corrupt	
 Corsica	Corsica	Córcega	Corse	Corsica	コルシカ島
 cortex	corteccia	corteza	écorce	bark	
-corvus	corvo; cornacchia, corvo	cuervo; cuervo	corbeau; corvidé, corneille	raven, Common Raven, Northern Raven; crow	カラス
+corvus	corvo; cornacchia, corvo	cuervo; cuervo	corbeau; corvidé, corneille	raven, Common Raven, Northern Raven; crow	; カラス
 cosmetorium	cosmetico, prodotto cosmetico	cosmético	cosmétique, produit cosmétique	cosmetic	
 cosmographia	cosmografia	cosmografía	cosmographie	cosmography	
 cosmotheoria	ideologia, weltanschauung, visione del mondo	ideología	idéologie	ideology	イデオロギー
@@ -509,7 +509,7 @@ Croatia	Croazia	Croacia	Croatie	Croatia, Republic of Croatia	クロアチア
 cruciāmen	tortura	tortura	torture	torture	拷問
 cruciātus	tortura	tortura	torture	torture	拷問
 crumena	portafoglio	billetera, cartera	portefeuille	wallet, billfold, notecase, pocketbook	財布
-crus	parte inferiore della gamba; gamba	parte inferior de la pierna; pierna	jambe; jambe	crus; leg, pin	足, 脚, 足
+crus	parte inferiore della gamba; gamba	parte inferior de la pierna; pierna	jambe; jambe	crus; leg, pin	; 足, 脚, 足
 crux gammata	svastica, croce gammata	esvástica, cruz gamada, suástica	svastika, croix gammée	swastika, crooked cross, hook cross, angled cross, gammadion, tetragammadion, cross gammadion, tetraskelion	卍, 卐
 crypta	cripta	cripta	crypte	crypt	
 cubiculum	camera da letto, camera	dormitorio, cuarto, alcoba	Chambre à coucher, Chambre, chambre, chambre à coucher, piaule	bedroom, sleeping room, chamber, bedchamber	寝室, ベッドルーム
@@ -549,7 +549,7 @@ Danaus plexippus	farfalla monarca	monarca	monarque, papillon monarque	monarch, m
 Dania	Danimarca	Dinamarca	Danemark	Denmark, Kingdom of Denmark	デンマーク
 Danubius	Danubio	Danubio	Danube	Danube	
 Danuvius	Danubio	Danubio	Danube	Danube	
-dare	dare; regalare, offrire, donare	dar, entregar; regalar, ofrecer, dar, donar	donner; offrir, donner	give; offer, gift, give	あげる
+dare	dare; regalare, offrire, donare	dar, entregar; regalar, ofrecer, dar, donar	donner; offrir, donner	give; offer, gift, give	あげる; 
 darmstadtium	darmstadtio	darmstadtio	darmstadtium	darmstadtium	ダルムスタチウム
 dativus	dativo, caso dativo	caso dativo	datif, cas datif	dative case, third case, dative	与格
 daucum	carota	zanahoria	carotte	carotte, carrot, have a slash	ニンジン
@@ -595,7 +595,7 @@ dextra	destro, destra	derecho, derecha	droit, à droite, droite	right
 diagramma Hertzsprung-Russell	diagramma Hertzsprung-Russell	diagrama de Hertzsprung-Russell, diagrama H-R	diagramme de Hertzsprung-Russell	Hertzsprung-Russell diagram, H-R diagram	ヘルツシュプルング・ラッセル図
 dico	dire, affermare, enunciare, raccontare	decir, manifestar	dire	say, tell, state	言う
 dictionarius	dizionario	diccionario	dictionnaire, dico	dictionary	辞書
-dies	giorno; giorno	día; día, jornada	jour; jour, journée	day; day	日
+dies	giorno; giorno	día; día, jornada	jour; jour, journée	day; day	; 日
 Dies	data	fecha	date	date	年月日, 日付
 dies Iovis	giovedì	jueves	jeudi	Thursday	木曜日
 dies Jovis	giovedì	jueves	jeudi	Thursday	木曜日
@@ -618,7 +618,7 @@ divisio	divisione	división	division	division (biology), division
 divitiae	ricchezza	opulencia, riquesa, riqueza, opulencia	opulence, richesse	wealth	
 diēs Saturnī	sabato	sábado	samedi	Saturday	土曜日
 diū	tutto il giorno	todo el día	toute la journée	all day, all day long	終日, 一日中
-docens	insegnante; insegnante, docente	maestro, profesor, maestra, profesora; maestra, profesora	professeur; professeure, professeur	teacher; female teacher	先生
+docens	insegnante; insegnante, docente	maestro, profesor, maestra, profesora; maestra, profesora	professeur; professeure, professeur	teacher; female teacher	先生; 
 docere	insegnare	enseñar, instruir, adiestrar, educar	enseigner	teach	教える
 doctor	insegnante	maestro, profesor, maestra, profesora	professeur	teacher	先生
 doctrix	insegnante, docente	maestra, profesora	professeure, professeur	female teacher	
@@ -711,7 +711,7 @@ extraordinarius	straordinario	extraordinario, extraordinaria	epätavallinen, ext
 eō	camminare	caminar, ir a pie, ir andando, andar, ir a pie, ir andando, ir	marcher, promener	walk, wandelen, wandelen	歩く
 fabula	favola, fola, fiaba	cuento de hadas	conte de fées	fairy tale	童話, お伽話
 fabulari	chiacchierare, ciarlare	charlar	chat, bavarder, causer, converser, discuter le coup, deviser, papoter, parloter, parlotter, faire la causette	chat, babble	
-fabulor	dire, affermare, enunciare, raccontare; chattare	decir, manifestar; chatear, dialogar en línea	dire; chatter, clavarder, tchatter	say, tell, state; chat	言う
+fabulor	dire, affermare, enunciare, raccontare; chattare	decir, manifestar; chatear, dialogar en línea	dire; chatter, clavarder, tchatter	say, tell, state; chat	言う; 
 facies	viso, faccia	cara, rostro	face, visage, figure	face	顔
 facilis	facile, semplice, comodo	fácil, pan comido, pan comido	facile, aisé, élémentaire, simple, fastoche	easy, piece of cake, like shooting fish in a barrel, convenient, simple	簡単な
 faeniculum	finocchio	hinojo	fenouil, fenouil commun	fennel	フェンネル
@@ -791,7 +791,7 @@ fortuna	fortuna, sorte	suerte, fortuna, buena fortuna	chance	luck, good luck, fo
 fortuna dies natalis	buon compleanno	feliz cumpleaños	bon anniversaire, joyeux anniversaire, bonne fête	happy birthday	お誕生日おめでとうございます, 誕生日おめでとう
 forum		foro	forum	forum	
 Forum Lepidi	Reggio Emilia, Reggio nell'Emilia	Reggio Emilia	Reggio d'Émilie		レッジョ・エミリア
-fragum	fragola, fravola; fragola	fresa, frutilla; fresa	fraise; fraisier	strawberry; strawberry plant, strawberry	苺, イチゴ
+fragum	fragola, fravola; fragola	fresa, frutilla; fresa	fraise; fraisier	strawberry; strawberry plant, strawberry	苺, イチゴ; 
 francium	francio	francio	francium	francium	フランシウム
 frater	fratello	hermano	frère	brother	兄弟, あに, お兄さん, 兄ちゃん, おとうと, ブラザー
 frater consanguineus		medio hermano paterno		paternal half brother	
@@ -1045,7 +1045,7 @@ iūnius	giugno	junio	juin	June	六月, 水無月, 6月
 Januarius	gennaio	enero	janvier	January	一月, 睦月, 1月
 Jonijos jura	Mar Ionio	mar Jónico	mer Ionienne	Ionian Sea	イオニア海
 Juda	Giuda, Giudea	Judá	Juda	Judah, Juda, Judea	
-Judas	Giuda, Giudea	Judá; Judas	Juda	Judah, Juda, Judea; Judas	
+Judas	Giuda, Giudea; 	Judá; Judas	Juda; 	Judah, Juda, Judea; Judas	
 Julius	luglio	julio	juillet	July	七月, 文月, 7月
 Junius	giugno	junio	juin	June	六月, 水無月, 6月
 Juventutem	giovinezza	jóvenes, juventud	jeunesse	youth, juvenesence	
@@ -1166,7 +1166,7 @@ magister	insegnante	maestro, profesor, maestra, profesora	professeur	teacher	先
 Magister	professore	profesor, profesora	professeur	professor	先生, 教授
 magistra	insegnante, docente	maestra, profesora	professeure, professeur	female teacher	
 magnetica acus nautica	bussola	brújula	boussole	compass	
-magnus	grande, enorme, grande; magno; grande	grande, muy grande, enorme; magno, gran, gran; gran, ilustre, célebre, grande	grand; grand; grand	great; great; great	偉い
+magnus	grande, enorme, grande; magno; grande	grande, muy grande, enorme; magno, gran, gran; gran, ilustre, célebre, grande	grand; grand; grand	great; great; great	; ; 偉い
 Maiestix	Abraracourcix	Abraracourcix, Abraracúrcix	Abraracourcix	Vitalstatistix	
 Maiotta	Mayotte	Mayotte	Mayotte	Mayotte	マヨット
 maius	maggio	mayo	mai	May	五月, 皐月, 5月
@@ -1174,19 +1174,19 @@ Maius	maggio	mayo	mai	May	五月, 皐月, 5月
 Malaca		Málaga	Malaga	Málaga	マラガ
 Malaesia	Malesia	Malasia	Malaisie	Malaysia	マレーシア
 malevolentia	melavolenza, malevolenza	malevolencia		malevolence	
-malleus	martello; martello	martillo; martillo	marteau; marteau	hammer; hammer, malleus	金槌
+malleus	martello; martello	martillo; martillo	marteau; marteau	hammer; hammer, malleus	金槌; 
 malum	mela	manzana	pomme	apple	林檎, リンゴ
 malum sinense	arancia	naranja	orange	orange	オレンジ, 橙
 malus	melo	manzano	pommier	apple, apple tree	林檎の木, リンゴの木
 mamilla	capezzolo	pezón, niple	mamelon, téton	nipple, papilla	乳首, 乳頭, ニップル
 mamma	seno	pecho, teta, seno, mama	sein, nichon, néné, loloche	breast, bust, tit	乳房, おっぱい
-mammiferus	mammifero; mammiferi, mammifero	mamífero; mamíferos, mamífero	mammifère; mammifère	mammal; mammal, mammalian	哺乳類, 哺乳動物, 哺乳類
+mammiferus	mammifero; mammiferi, mammifero	mamífero; mamíferos, mamífero	mammifère; mammifère	mammal; mammal, mammalian	; 哺乳類, 哺乳動物, 哺乳類
 mandibula	mandibola	mandíbula	mandibule	mandible, mandibula, dentary bone, inferior maxillary bone, submaxilla, jawbone	
 mandioca	manioca	yuca, casabe, casava, mandioca	manioc	cassava, manioc	キャッサバ
 mandragora	mandragora	mandragora, mandrágora	mandragore	mandrake	マンドラゴラ
 mane	mattina	mañana	matin, matinée	morning, morrow	午前
 manganum	manganese	manganeso	manganèse	manganese	マンガン
-manica	manica	mánica; manga	manique; manche	manica; sleeve	袖, スリーブ
+manica	; manica	mánica; manga	manique; manche	manica; sleeve	; 袖, スリーブ
 manicae	manette	esposas	menottes, pinces, bracelets	manacle, handcuffs	手錠
 mantele	asciugamano	toalla	serviette	towel	タオル
 manticulator	borsaiolo, borseggiatore, tagliaborse	ratero, carterista, escamoteador	pickpocket	pickpocket, pick-pocket	すり
@@ -1305,7 +1305,7 @@ Narbo Martius	Narbona	Narbona	Narbonne	Narbonne	ナルボンヌ
 nare	nuotare	nadar	nager	swim	泳ぐ
 naris	narice	nariz, narina	sierain, narine, naseau, trou de nez	nostril, naris, nosehole	鼻孔
 nascentia	parto, nascita, mettere al mondo	parto, nacimiento, nacimiento, nacimiento	accouchement, naissance, parturition, naissance, mise-bas, naissance, mise-bas	childbirth, birth, parturition, childbirth, birth, childbirth, birth	出産
-nasciturus	prenatale, prénatal, nascituro	prenatal	prénatal, anténatal	prenatal, unborn, antenatal	
+nasciturus	prenatale, prénatal, nascituro; 	prenatal; 	prénatal, anténatal; 	prenatal, unborn, antenatal; 	
 nasus	naso	nariz	nez, pif	nose	鼻, はな
 nata	figlia	hija	fille	daughter	娘
 natare	nuotare	nadar	nager	swim	泳ぐ
@@ -1331,14 +1331,14 @@ newton	newton	newton	newton	newton	ニュートン
 niccolum	nichel	níquel	nickel	nickel	ニッケル, 白銅
 niger	nero; nero	negro, negra; negro	noir; noir	black; black	黒, くろ; 黒い
 nihil est	prego, di niente, non c'è di che, con piacere	de nada	de rien, il n'y a pas de quoi, je vous en prie, pas de quoi, bienvenue, je t’en prie, ça me fait plaisir, service, je t'en prie, avec plaisir	you're welcome, no problem, it was nothing, don't worry about it, my pleasure	どういたしまして, いいえ
-nimbus	nimbo	nimbo, aureola, halo; nimbo	nimbe; nimbus	nimbus; nimbus	後光; 雨雲
+nimbus	nimbo; 	nimbo, aureola, halo; nimbo	nimbe; nimbus	nimbus; nimbus	後光; 雨雲
 niobium	niobio	niobio, columbio	niobium	niobium	ニオブ
 nitrogenium	azoto	nitrógeno	azote	nitrogen, azote	窒素
 nix	neve	nieve	neige	snow	雪, ゆき
 nobelium	nobelio	nobelio	nobélium	nobelium	ノーベリウム
 Nobilitas	nobiltà	nobleza	noblesse	nobility	
 noctua	civetta	búho, lechuza	chouette, hibou, strigiforme, hibou	owl	フクロウ, 梟
-nomen	nome, nome proprio	nombre, denominación	nom, nom propre	name, proper name, proper noun	名前, 固有名詞
+nomen	; nome, nome proprio	; nombre, denominación	; nom, nom propre	; name, proper name, proper noun	; 名前, 固有名詞
 nomen substantivum	nome, sostantivo	sustantivo	substantif, nom, substantiivi	noun, substantive	名詞
 nominativus	caso nominativo	nominativo, caso nominativo	cas nominatif, cas sujet	nominative case, nominative, subjective case	主格
 nomisma	medaglia, decorazione	medalla	médaille	decoration, medal	メダル
@@ -1694,7 +1694,7 @@ quadraginta unus	quarantuno	cuarenta y uno	quarante-et-un, quarante et un	forty-
 quadringentī	quattrocento	cuatro cientos	quatre cents, quatre-cents	four hundred	
 quam celerrime	al più presto, il più presto possibile, quanto prima, il prima possibile	cuanto antes, antes posible, lo más rápido posible, tan pronto como sea posible, rápido, rápidamente	dès que possible, au plus vite	ASAP, soonest possible, earliest possible, asap, as soon as possible	できるだけ早く, 出来る限り早期, できる限り急いで, 可及的速やかに
 quam primum	al più presto, il più presto possibile, quanto prima, il prima possibile	cuanto antes, antes posible, lo más rápido posible, tan pronto como sea posible, rápido, rápidamente	dès que possible, au plus vite	ASAP, soonest possible, earliest possible, asap, as soon as possible	できるだけ早く, 出来る限り早期, できる限り急いで, 可及的速やかに
-quando	quando; quando	cuando, cuándo, quando; cuándo	quand; quand	when; when	いつ
+quando	quando; quando	cuando, cuándo, quando; cuándo	quand; quand	when; when	いつ; 
 quanto… tanto		cuanto, tanto… quanto; tanto… quanto, según, tanto como, hasta donde	autant que, dans la mesure où, en proportion de ce que; autant que, dans la mesure où, selon que	as much as; as much as, according as, as, so far as	
 quantum		cuanto, tanto… quanto	autant que, dans la mesure où, en proportion de ce que	as much as	
 quarantanna	quarantena	cuarentena	quarantaine	quarantine	検疫
@@ -1721,7 +1721,7 @@ quīnque	cinque	cinco	cinq	five	五
 Radiatio Cherenkov	Radiazione Čerenkov	radiación de Cherenkov		Cherenkov radiation	
 radiolus	barbicella, amulo			barbicel	
 radium	radio	radio, radio, radio, radio, radio, radio	radium	radium	ラジウム
-radius	radio; barbula	radio; bárbulas, barbillas	radius; barbule	radius; barbule	橈骨
+radius	radio; barbula	radio; bárbulas, barbillas	radius; barbule	radius; barbule	橈骨; 
 radix	radice	raíz	racine	root	根
 rado	radere, radersi	afeitar, rapar, rasurar	raser	shave	そる
 radon	radon	radon, radón	radon	radon	ラドン, レイドン
@@ -1760,7 +1760,7 @@ Respublica Populi Democratica Coreae	Corea del Nord, Nord Corea	Corea del Norte	
 Respublica Veneta	Serenissima Repubblica di Venezia, Repubblica di Venezia, Serenissima, Repubblica di San Marco, Repubblica Veneta	República de Venecia	République de Venise, Sérénissime, Sérénissime République de Venise	Republic of Venice, Most Serene Republic of Venice, Venetian Republic, Most Serene Republic	
 Respublicae Unitae Americae	Stati Uniti, Stati Uniti d'America	Estados Unidos de América, Estados Unidos, E.E.U.U., EEUU	États-Unis d'Amérique, États-Unis	United States, United States of America, America, US, U.S., U.S.A., U.S. of A., States, USA	アメリカ合衆国, 米国, アメリカ
 restituo	restituire	restituir, devolver	rendre, restituer	give back, return	戻す, 返す
-retina	retina; retina	retina; retina	rétine; rétine	retina; retina	網膜
+retina	retina; retina	retina; retina	rétine; rétine	retina; retina	網膜; 
 Reunio	Riunione	Reunión	Réunion	Réunion	レユニオン
 revolutio	rivoluzione	revolución	révolution	revolution	革命, 改革
 rex	re	rey	roi	king	国王, 国王
@@ -1890,7 +1890,7 @@ Sicagum	Chicago	Chicago	Chicago	Chicago	シカゴ
 siccare	asciugare, seccare, essiccare	secar, enjugar	essuyer, sécher	dry	乾かす
 siccitas	siccità	sequías, sequía	sécheresse	drought, drouth	日照り, 旱魃
 siccus	assetato; secco, secca, asciutto, asciutta, asciutta, asciutto, secca, secco	sediento; seco	assoiffé; sec, sèche	thirsty; dry	喉が乾いた; 乾いた, かわいた
-silere	tacere, restare zitto, rimanere zitto, rimanere in silenzio, restare in silenzio, stare zitto, stare in silenzio; fare silenzio, tacere	callar, guardar silencio	se taire	be silent, keep silent, hold one's tongue, remain silent, keep quiet; be silent, keep silence, be in silence	黙る
+silere	tacere, restare zitto, rimanere zitto, rimanere in silenzio, restare in silenzio, stare zitto, stare in silenzio; fare silenzio, tacere	callar, guardar silencio; 	se taire; 	be silent, keep silent, hold one's tongue, remain silent, keep quiet; be silent, keep silence, be in silence	黙る; 
 silex	roccia	rocas, roca	roche, pierre	rock	岩石, 岩
 silicium	silicio	silicio	silicium	silicon	珪素, シリコン
 silva	foresta	bosques, bosque, selva, silva	forêt	forest	森, 森林, 森林
@@ -1949,7 +1949,7 @@ statua	statua	estatua	statue	statue	像
 status	luogo, posto	lugar, ubicación, sitio, localidad	lieu, endroit	place, location, situation	場所, 位置
 Status Uniti Americae	Stati Uniti, Stati Uniti d'America	Estados Unidos de América, Estados Unidos, E.E.U.U., EEUU	États-Unis d'Amérique, États-Unis	United States, United States of America, America, US, U.S., U.S.A., U.S. of A., States, USA	アメリカ合衆国, 米国, アメリカ
 statēra	bilancia, stadera	báscula, balanza	balance	scale, scales, weighing scale, balance	秤, 天秤
-stella	stella; stella	estrella, astro; estrella	étoile	star; star	星, 恒星, 星
+stella	stella; stella	estrella, astro; estrella	étoile; 	star; star	星, 恒星, 星; 
 sterilis	infertile, sterile, infecondo	infértil, estéril, infecundo	infertile, infécond, brehaigne, bréhaigne, stérile	infertile, barren	不妊, 不毛
 sternum	sterno	esternón	sternum	breastbone	胸骨
 sternuo	starnutire, starnutare	estornudar	éternuer, atchoumer	sneeze, sternutate	くしゃみをする, しゃみをする
@@ -1996,8 +1996,8 @@ sēdecim	sedici	dieciseis, dieciséis	seize	sixteen	十六
 sōlāris	solare	solar	solaire	man, solar	
 sūra	polpaccio	pantorrilla	mollet	calf	脹脛
 taberna	magazzino, negozio	tienda	magasin, boutique	store, boutique, retail outlet	店, 商店
-tablinum	tablinio, tablino; studio, studiolo	tablino; estudio	tablinum; étude, bureau	tablinum; study room, study	書斎
-tacere	tacere, restare zitto, rimanere zitto, rimanere in silenzio, restare in silenzio, stare zitto, stare in silenzio; fare silenzio, tacere	callar, guardar silencio	se taire	be silent, keep silent, hold one's tongue, remain silent, keep quiet; be silent, keep silence, be in silence	黙る
+tablinum	tablinio, tablino; studio, studiolo	tablino; estudio	tablinum; étude, bureau	tablinum; study room, study	; 書斎
+tacere	tacere, restare zitto, rimanere zitto, rimanere in silenzio, restare in silenzio, stare zitto, stare in silenzio; fare silenzio, tacere	callar, guardar silencio; 	se taire; 	be silent, keep silent, hold one's tongue, remain silent, keep quiet; be silent, keep silence, be in silence	黙る; 
 Taivania	Taiwan	Taiwán	Taïwan, République de Chine	Taiwan	台湾
 talus	caviglia	tobillo	cheville	ankle, talocrural joint	足首
 tamias	tamia	tamia, ardilla listada, ardilla rayada	tamia, suisse, chipmunk	chipmunk, ground squirrel, striped squirrel	シマリス, 縞栗鼠
@@ -2055,7 +2055,7 @@ tondeo	radere, radersi	afeitar, rapar, rasurar	raser	shave	そる
 tonitrus	tuono	trueno	tonnerre	thunder	雷
 tonitruum	tuono	trueno	tonnerre	thunder	雷
 Tonsor	Barbiere	barbero		barber	
-tonsura	tonsura; tonsura	tonsura; tonsura	tonsure; tonsure	tonsure; Roman tonsure, tonsure	トンスラ
+tonsura	tonsura; tonsura	tonsura; tonsura	tonsure; tonsure	tonsure; Roman tonsure, tonsure	トンスラ; 
 tonus	tuono	trueno	tonnerre	thunder	雷
 trabs	trave	viga	poutre, poutrelle	beam	梁
 tractus digestivus	apparato digerente, tratto gastrointestinale, apparato gastrointestinale	tubo digestivo, aparato digestivo, sistema digestivo	système gastro-intestinal, tube digestif	gastrointestinal tract, alimentary canal, digestive tract, GI tract, gut	消化器, 消化管
@@ -2078,7 +2078,7 @@ trigintasex	trentasei	treinta y seis, 36	trente-six, 36	thirty-six	三十六
 trigintatres	trentatrè, trentatré	treinta y tres, 33	trente-trois, 33	thirty-three	三十三
 trigintaunus	trentuno	treinta y uno, 31	trente et un, trente-et-un, 31	thirty-one	三十一
 trilogia	trilogia	trilogía	trilogie	trilogy	三部作
-trimestris	trimestre; trimestre	trimestre; trimestre	trimestre; trimestre	trimester; quarter, trimester	四半期
+trimestris	trimestre; trimestre	trimestre; trimestre	trimestre; trimestre	trimester; quarter, trimester	; 四半期
 Trinitas et Tabacum	Trinidad e Tobago	Trinidad y Tobago	Trinité-et-Tobago, Trinidad-et-Tobago	Trinidad and Tobago	トリニダード・トバゴ
 tripudium	ballare, danza, ballo	baile, danza	danse	dance	踊り
 tristis	triste, infelice, rattristato	triste, afligido, apesadumbrado, infeliz	triste, affligé, morne, attristé, chagrin, peiné, chagriné	sad, unhappy, doleful, dolorous	悲しい
@@ -2117,7 +2117,7 @@ uber	mammella	ubre	pis	udder	乳房
 ubi	dove	donde, dónde	où	where	何処
 ulcus	ulcera	úlcera	ulcère	ulcer	潰瘍
 ulcus cruris	ulcera venosa, ulcera varicosa			venous ulcer, varicose ulcer	
-ulna	gomito	cúbito; codo	ulna, cubitus; coude	ulna, elbow bone; elbow	尺骨; 肘
+ulna	; gomito	cúbito; codo	ulna, cubitus; coude	ulna, elbow bone; elbow	尺骨; 肘
 ultima	fine, estremità, capo	extremo	bout	end	
 ultimum	fine, estremità, capo	extremo	bout	end	
 ultimus	fine, estremità, capo	extremo	bout	end	
@@ -2134,7 +2134,7 @@ undequinquaginta	quarantanove	cuarenta y nueve, 49	quarante-neuf	forty-nine	四�
 undesexaginta	cinquantanove	cincuenta y nueve, 59	cinquante-neuf	fifty-nine	五十九
 undetriginta	ventinove	veintinueve, 29	vingt-neuf, 29	twenty-nine	二十九
 unguis	unghia	uña	ongle	fingernail, nail	爪
-ungula	zoccolo; zoccolo	pezuña; pezuña, casco	sabot; sabot	hoof; hoof	蹄
+ungula	zoccolo; zoccolo	pezuña; pezuña, casco	sabot; sabot	hoof; hoof	; 蹄
 unicornis	unicorno	unicornio	licorne	unicorn	ユニコーン, 一角獣
 universitas	università, università, accademia, università	universidad, universidad, academia, universidad, academia, academia	université, université, académie, université	university, academy, university, university	大学, 大学, 大学
 univira					

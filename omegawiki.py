@@ -56,6 +56,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='OmegaWiki database query tool')
     parser.add_argument('db', help='database file')
     parser.add_argument('langs', nargs='+', help='language codes')
+    parser.add_argument('-u', '--uniq', action='store_true', help='only show unique translations')
     args = parser.parse_args()
     
     db, langs = args.db, args.langs
@@ -74,12 +75,19 @@ if __name__ == "__main__":
     print("\t".join(names))
     for xid, spell in sorted(all_words(lids[0]), key=lambda x: x[1].lower()):
         mids = meaning_ids(xid)
-        words = [
-            "; ".join(
-                words
-                for mid in mids
-                if (words := ", ".join(get_words(mid, lid)))
-            )
-            for lid in lids[1:]
-        ]
-        print(spell, *words, sep="\t")
+        translations = []
+        for lid in lids[1:]:
+            meanings = []
+            translation_words = set()
+            for mid in mids:
+                words = []
+                for word in get_words(mid, lid):
+                    if not args.uniq or word not in translation_words:
+                        translation_words.add(word)
+                        words.append(word)
+                meanings.append(", ".join(words))
+            if translation_words:
+                translations.append("; ".join(meanings))
+            else:
+                translations.append("")
+        print(spell, *translations, sep="\t")

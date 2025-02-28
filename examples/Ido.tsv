@@ -97,7 +97,7 @@ arab	araba	lingua Arabica	arabe, arabe standard moderne, arabe standard, arabe l
 Araba Peninsulo	Arabio	Arabia	Arabie	Arabian Peninsula, Arabia, Arabian subcontinent	アラビア半島
 Arabia	Arabio	Arabia	Arabie	Arabian Peninsula, Arabia, Arabian subcontinent	アラビア半島
 Arabiana	araba	lingua Arabica	arabe, arabe standard moderne, arabe standard, arabe littéral	Arabic, Standard Arabic	アラビア語
-arakido	arakido, ternukso; ternukso	arachis	arachide, cacahuete, cacahouète, cacahuète, pinotte, pistache de terre; arachide, noix de terre, pois de terre	peanut, groundnut, earthnut, goober, pinda, jack nut, monkey nut; peanut, groundnut	ラッカセイ, 落花生, ピーナツ, ピーナッツ
+arakido	arakido, ternukso; ternukso	arachis; 	arachide, cacahuete, cacahouète, cacahuète, pinotte, pistache de terre; arachide, noix de terre, pois de terre	peanut, groundnut, earthnut, goober, pinda, jack nut, monkey nut; peanut, groundnut	ラッカセイ, 落花生, ピーナツ, ピーナッツ; 
 arborala				arboreal	
 arboro	arbo	arbor	arbre	tree	木, 樹木
 argon	argono		argon	argon	アルゴン
@@ -245,7 +245,7 @@ chikungunya	ĉikungunjo		chikungunya, chik	chikungunya
 Chili	Ĉilio		Chili	Chile, Republic of Chile	チリ
 chiniono			chignon	chignon, bun	シニヨン
 chipa	malmultekosta	vilis	bon marché, pas cher	cheap, economic, inexpensive	安い
-Chipro	Kipro; Kipro	Cyprus	Chypre, République de Chypre; Chypre	Cyprus, Republic of Cyprus; Cyprus	キプロス
+Chipro	Kipro; Kipro	Cyprus; 	Chypre, République de Chypre; Chypre	Cyprus, Republic of Cyprus; Cyprus	キプロス; 
 ciel-arko	ĉielarko	arcus	arc-en-ciel	rainbow	虹
 cielo	ĉielo	caelum	ciel	sky	空
 ciencala kunlaboro			coopération scientifique	scientific co-operation	
@@ -330,7 +330,7 @@ drinkajo	trinkaĵo		boisson, consommation, breuvage	beverage, drink, drink, drin
 drinkar	trinki	bibere	boire	drink, gulp, quaff, sip	飲む
 drinkopekunio			donner un pourboire, verser un pourboire	tip	
 dronto	dodo, dronto		dodo, dronte de Maurice, dronte	dodo	ドードー
-du	du; du	duo, duae	deux; deux	two; two	二; 二
+du	du; du	; duo, duae	deux; deux	two; two	二; 二
 duadek	dudek	viginti	vingt	twenty, score, score	二十
 duno	duno		dune de sable, dune	sand dune	砂丘
 duopla stelo			étoile binaire	binary star	連星
@@ -709,11 +709,11 @@ kobalto	kobalto	cobaltum	cobalt	cobalt	コバルト
 kokaino	kokaino		cocaïne	cocaine	コカイン
 kokao			coca	coca	
 koklusho	kokluŝo		coqueluche	whooping cough, chin cough, pertussis	百日咳
-kokoso	kokoso; kokospalmo, kokosarbo		noix de coco; cocotier	kokosnoot, coconut; coconut palm, cocnut, coconut	ココナッツ
+kokoso	kokoso; kokospalmo, kokosarbo		noix de coco; cocotier	kokosnoot, coconut; coconut palm, cocnut, coconut	; ココナッツ
 kolesterolo	kolesterolo		cholestérol, cholestérine	cholesterol	コレステロール
 kolino	monteto	collis	colline	hill, loma, colina	丘, 丘陵
 kolo	faŭko		goulot, goulot de bouteille, tête de bouteille	bottleneck, neck	瓶の首
-kolombo	kolombo		colombe; colombe, pigeon	dove, pigeon; pigeon, dove	鳩
+kolombo	; kolombo		colombe; colombe, pigeon	dove, pigeon; pigeon, dove	; 鳩
 kolumbario			columbarium	columbarium	納骨堂
 Kolumbia	Kolombio		Colombie	Colombia, Republic of Colombia	コロンビア
 kolumo	kolumo	collum	col, encolure	collar	襟, カラー
@@ -743,7 +743,7 @@ Kornwal	Kornvalo	Cornubia	Cornouailles	Cornwall	コーンウォール
 korseto	korseto		corset	corset	
 korvo	korniko	corvus	corvidé, corneille	crow	カラス
 kotono	kotono		cotonnier	cotton plant, cotton	綿, コットン
-kovrilo	lankovrilo	lōdix	couvercle; couverture	lid; blanket	毛布
+kovrilo	; lankovrilo	; lōdix	couvercle; couverture	lid; blanket	; 毛布
 krabo			écrevisse, crabe	crab	カニ, 蟹
 kravato	kravato		cravate	tie, necktie	ネクタイ
 krayono	krajono	plumbum	crayon	pencil	鉛筆, えんぴつ
@@ -764,7 +764,7 @@ kuko	kuko, torto	placenta	gateau, gâteau	cake	菓子な, ケーキ
 kukombro	kukumo	cucumer	concombre	cucumber	きゅうり
 kuliero	kulero	coclearium	cuiller, cuillère	spoon	スプーン, さじ
 kultelo	tranĉilo	culter	couteau	knife	小刀, 包丁, ナイフ, 包丁
-kun	kun		avec; avec	with; with, amongst, alongside	
+kun	; kun		avec; avec	with; with, amongst, alongside	
 kupro	kupro	cuprum	cuivre	copper	銅
 kurar	kuri	currere	courir	run	走る
 kurioza	scivola	curiosus, studiosus	curieux	curious, funny	好奇心, 知る
@@ -1057,7 +1057,7 @@ parvenuo			nouveau riche, parvenu	nouveau riche, new money, parvenu, upstart	成
 paskala ovo	paska ovo	ovum paschale	œuf de Pâques	Easter egg	イースター・エッグ
 Pasko-Insulo	Paskinsulo	insula Paschae	Île de Pâques, île de Pâques, Ile de Pâques, ile de Pâques	Isla de Pascua, Easter Island	イースター島
 pasto			pâte	paste	
-patro	patro; generinto	pater	père; parent	father; parent	父, お父さん, 父親, 父上, 親父; 親
+patro	patro; generinto	pater; 	père; parent	father; parent	父, お父さん, 父親, 父上, 親父; 親
 patrulo	patro	pater	père	father	父, お父さん, 父親, 父上, 親父
 pavonino	pavino	pāva	paonne	peahen	
 pavono	pavo		paon	peacock, peafowl	孔雀, ピーコック
@@ -1094,7 +1094,7 @@ plu bona			meilleur, mieux	better
 plubeligo	beligo		embellissement	beautification, embellishment	
 plugilo	plugilo	aratrum	charrue	plough	鋤, 鍬
 plumiero	pruno	prūnum	prune	plum	セイヨウスモモ, プラム
-plumo	plumo; plumo; pruno	plūma; prūnum	plume, stylo, stylo à encre, stylographe; plume; prune	pen; feather, plumage, plume; plum	ペン, ボールペン; 羽根; セイヨウスモモ, プラム
+plumo	plumo; plumo; pruno	; plūma; prūnum	plume, stylo, stylo à encre, stylographe; plume; prune	pen; feather, plumage, plume; plum	ペン, ボールペン; 羽根; セイヨウスモモ, プラム
 plutonio	plutonio; plutonio; plutonio	plutonium; plutonium; plutonium	plutonium, plutonium, plutonium; plutonium, plutonium, plutonium; plutonium, plutonium, plutonium	plutonium, plutonium, plutonium; plutonium, plutonium, plutonium; plutonium, plutonium, plutonium	プルトニウム; プルトニウム; プルトニウム
 polemikar			polémiser, polémiquer, polémiciser	polemize, polemise	
 polexo	polekso	pollex	pouce	thumb	親指
@@ -1157,7 +1157,7 @@ raupo	raŭpo	eruca	chenille	caterpillar	毛虫, 芋虫
 reaktivo			réactif	reagent	試薬
 reda	ruĝo; ruĝa	ruber; rubeus, rufus, ruber, rubidus, russeus, vermiculus, rubicundus	rouge; rouge	red; red	赤; 赤い
 redaktar			éditer, modifier	edit	編集する
-regretinde	bedaŭrinde, malfeliĉe; bedaŭrinde, malfeliĉe	infeliciter	malheureusement, malencontreusement, hélas; malheureusement, hélas, à la male heure, malencontreusement	unfortunately, regrettably, unluckily, sadly, unhappily; unfortunately	生憎, 残念; 生憎, 残念
+regretinde	bedaŭrinde, malfeliĉe; bedaŭrinde, malfeliĉe	; infeliciter	malheureusement, malencontreusement, hélas; malheureusement, hélas, à la male heure, malencontreusement	unfortunately, regrettably, unluckily, sadly, unhappily; unfortunately	生憎, 残念; 生憎, 残念
 regulademo			homéostasie	homeostasis	恒常性
 rejala	reĝeca		régalien	regalian	
 rejulo	reĝo	rex	roi	king	国王, 国王
@@ -1178,7 +1178,7 @@ ridetar	rideti	subridere	sourire	smile	微笑む
 rinocero	rinocero	rhinoceros	rhinocéros	rhinoceros, rhino	犀 (さい、, サイ, 犀
 rinovigebla fonto di energio			source d'énergie renouvelable	renewable energy source	再生可能なエネルギー源
 rivero	rivero	flumen, fluvius	fleuve, rivière	river	川
-rivo	bordo	ripa	berge; côte, rivage, rive	bank; shore	
+rivo	bordo; 	ripa; 	berge; côte, rivage, rive	bank; shore	
 robo	robo		robe	dress	ワンピース, ドレス, 服
 rodio	rodio	rhodium	rhodium	rhodium	ロジウム
 Romana	Romia		romain	Roman	
@@ -1206,7 +1206,7 @@ salvio	salvio		sauge, sauge officinale, herbe sacrée, thé d'Europe	sage, garde
 samario	samario		samarium	samarium	サマリウム
 sambuko	sambuko	sambucus	sureau	elderberry, elder	ニワトコ, 接骨木
 sampanye	ĉampano		champagne	champagne	シャンパン
-San Marino	San-Marino, San-Marino, San-Marino; San-Marino		Saint-Marin, Saint-Marin, Saint-Marin, République de Saint-Marin; Ville de Saint-Marin, Saint-Marin	San Marino, San Marino, San Marino, Republic of San Marino; San Marino	サン・マリノ, サン・マリノ, サン・マリノ
+San Marino	San-Marino, San-Marino, San-Marino; San-Marino		Saint-Marin, Saint-Marin, Saint-Marin, République de Saint-Marin; Ville de Saint-Marin, Saint-Marin	San Marino, San Marino, San Marino, Republic of San Marino; San Marino	サン・マリノ, サン・マリノ, サン・マリノ; 
 sango	sango	sanguis	sang	blood	血, 血液
 sanguisugo	hirudo		sangsue	leech	
 santaquuyo	sanktakvujo		bénitier	font	
@@ -1221,9 +1221,9 @@ selizar			bâter, embâter, seller; seller	saddle; saddle
 selo	selo		bât, selle	packsaddle, saddle, bat	
 semano	semajno	hebdomas, septimana	semaine	week	週間
 semantiko	semantiko		sémantique	semantics	意味論
-semino			semence; graine	seed; seed	種子, 種
+semino			semence; graine	seed; seed	; 種子, 種
 semolo	semolino, semolo		semoule		
-sempre	ĉiam		toujours; également	anytime; also	常に
+sempre	ĉiam; 		toujours; également	anytime; also	常に; 
 Senegal	Senegalo, Senegalio		Sénégal	Senegal	セネガル
 sep	sep	septem	sept	seven	七
 sepadek	sepdek	septuaginta	soixante-dix, septante	seventy	七十
@@ -1359,7 +1359,7 @@ tolerar	suferi		supporter, tolérer	bear, digest, endure, stick out, stomach, st
 tomato	tomato	solana lycopersica	tomate	tomato	トマト
 tombeyo	tombejo, enterigejo	sepulcretum	cimetière	cemetery, churchyard, cœmetery, graveyard, burial ground	墓地, ぼち
 Tonga	Tongo		Tonga	Tonga	トンガ
-tonsuro		tonsura; tonsura	tonsure; tonsure	tonsure; Roman tonsure, tonsure	トンスラ
+tonsuro		tonsura; tonsura	tonsure; tonsure	tonsure; Roman tonsure, tonsure	トンスラ; 
 topologio	topologio		topologie	topology	位相幾何学
 torio	torio	thorium	thorium	thorium	トリウム
 tormento	torturo	cruciāmen, cruciātus	torture	torture	拷問
@@ -1386,7 +1386,7 @@ tupio	turbo		toupie	spintop, top, spinning top	独楽
 Turkia	Turkujo, Turkio		Turquie, République de Turquie	Turkey	トルコ
 Turkmenistan	Turkmenio	Turcomannia	Turkménistan	Turkmenistan	トルクメニスタン
 Turks e Kaikos-Insuli			Îles Turks et Caïques, Îles Turques et Caïques	Turks and Caicos Islands	タークス・カイコス諸島
-turmo	turo; turo	turris	tour; tour	tower; rook, castle	塔, タワー; ルーク
+turmo	turo; turo	turris; 	tour; tour	tower; rook, castle	塔, タワー; ルーク
 Tuvalu	Tuvalo	Tuvalu	Tuvalu	Tuvalu	ツバル
 ube	kie	ubi	où	where	何処
 uceleto	birdido	pullus, aucella, avicula	oisillon, poussin	nestling, chick, fledgling	雛
@@ -1450,7 +1450,7 @@ viteyo	vitejo		vignoble, vigne	vineyard, vinery	ブドウ園
 vivo-cienco			sciences de la vie	life science	生命科学, ライフサイエンス
 vizajo	vizaĝo	facies	face, visage, figure	face	顔
 volar	voli	volare, desiderare	vouloir	want	欲しい
-volkano	vulkano	mons ignifer; mons ignifer	volcan; volcan	volcano; volcana, volcano	火山; 火山
+volkano	vulkano; 	mons ignifer; mons ignifer	volcan; volcan	volcano; volcana, volcano	火山; 火山
 volkanologio	vulkanologio, vulkanoscienco	vulcanologia	volcanologie, vulcanologie	volcanology, vulcanology	火山学
 vortaro	vortaro	dictionarius	dictionnaire, dico	dictionary	辞書
 vorto	vorto	vocabulum, verbum	mot	word	言葉, 単語, 言葉, 語
