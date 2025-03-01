@@ -87,6 +87,8 @@ if __name__ == "__main__":
                         words.append(word)
                 meanings.append(", ".join(words))
             if translation_words:
+                if args.uniq:
+                    meanings = [m for m in meanings if m]
                 translations.append("; ".join(meanings))
             else:
                 translations.append("")
