@@ -35,9 +35,9 @@ def langcode(lid):
         """, (lid,)).fetchone()
 
 def all_words(lid):
-    return cur.execute("""
+    return [(row[0], str(row[1])) for row in cur.execute("""
         SELECT expression_id, spelling FROM uw_expression WHERE language_id = ?
-        """, (lid,))
+        """, (lid,))]
 
 def meaning_ids(xid):
     return [row[0] for row in cur.execute("""
