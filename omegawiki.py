@@ -39,6 +39,11 @@ def all_words(lid):
         SELECT expression_id, spelling FROM uw_expression WHERE language_id = ?
         """, (lid,))]
 
+def expression_ids(spelling, lid):
+    return [row[0] for row in cur.execute("""
+        SELECT expression_id FROM uw_expression WHERE spelling = ? AND language_id = ?
+        """, (spelling, lid))]
+
 def meaning_ids(xid):
     return [row[0] for row in cur.execute("""
         SELECT defined_meaning_id FROM uw_syntrans WHERE expression_id = ?
@@ -92,4 +97,5 @@ if __name__ == "__main__":
                 translations.append("; ".join(meanings))
             else:
                 translations.append("")
-        print(spell, *translations, sep="\t")
+        if not args.uniq or any(t for t in translations):
+            print(spell, *translations, sep="\t")
