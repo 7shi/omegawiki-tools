@@ -1,11 +1,13 @@
 import sqlite3
 
 conn, cur = None, None
+lid_en = None
 
 def open_db(db):
-    global conn, cur
+    global conn, cur, lid_en
     conn = sqlite3.connect(db)
     cur  = conn.cursor()
+    lid_en = language_id("en")
 
 def language_id(name):
     result = cur.execute("""
@@ -22,11 +24,21 @@ def language_id(name):
         """, (name + "%",)).fetchone()
     return result[0] if result else None
 
-def language_name(lid, name_lid):
+def language_name(lid, name_lid=None):
+    if name_lid:
+        result = cur.execute("""
+            SELECT language_name FROM language_names
+            WHERE language_id = ? AND name_language_id = ?
+            """, (lid, name_lid)).fetchone()
+        return result[0] if result else ""
+    name = language_name(lid, lid) or language_name(lid, lid_en)
+    if name:
+        return name
     result = cur.execute("""
         SELECT language_name FROM language_names
-        WHERE language_id = ? AND name_language_id = ?
-        """, (lid, name_lid)).fetchone()
+        WHERE language_id = ?
+        LIMIT 1
+        """, (lid,)).fetchone()
     return result[0] if result else ""
 
 def langcode(lid):
@@ -76,7 +88,7 @@ if __name__ == "__main__":
         print("Unknown language(s):", ", ".join(unknowns))
         exit(1)
 
-    names = [language_name(lid, lid) for lid in lids]
+    names = [language_name(lid) for lid in lids]
     print("\t".join(names))
     for xid, spell in sorted(all_words(lids[0]), key=lambda x: x[1].lower()):
         mids = meaning_ids(xid)
