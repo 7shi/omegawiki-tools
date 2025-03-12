@@ -133,3 +133,20 @@ Custom language extraction can be done using:
 ```bash
 python omegawiki.py db/omegawiki.db [source-lang] [target-lang1] [target-lang2] ...
 ```
+
+Command examples:
+
+Basic usage - Extract English-Japanese word pairs:
+```bash
+python omegawiki.py db/omegawiki.db en ja
+```
+
+Unique words only - Extract unique English-Japanese pairs:
+```bash
+python omegawiki.py -u db/omegawiki.db en ja
+```
+
+Word category filter - Extract only "spring" related English-Japanese pairs:
+```bash
+python omegawiki.py -w spring db/omegawiki.db en ja
+```

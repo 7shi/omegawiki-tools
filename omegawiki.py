@@ -68,15 +68,21 @@ def get_words(mid, lid):
         WHERE defined_meaning_id = ? AND language_id = ?
         """, (mid, lid))]
 
+def search_word(word, lid):
+    return [row[0] for row in cur.execute("""
+        SELECT expression_id FROM uw_expression WHERE spelling = ? AND language_id = ?
+        """, (word, lid,))]
+
 if __name__ == "__main__":
-    import argparse
+    import argparse, sys
     parser = argparse.ArgumentParser(description='OmegaWiki database query tool')
     parser.add_argument('db', help='database file')
     parser.add_argument('langs', nargs='+', help='language codes')
     parser.add_argument('-u', '--uniq', action='store_true', help='only show unique translations')
+    parser.add_argument('-w', '--word', help='word to search for')
     args = parser.parse_args()
-    
-    db, langs = args.db, args.langs
+
+    db, langs, word = args.db, args.langs, args.word
 
     open_db(db)
     lids = []
@@ -85,12 +91,20 @@ if __name__ == "__main__":
         lid = language_id(lang)
         (lids if lid else unknowns).append(lid)
     if unknowns:
-        print("Unknown language(s):", ", ".join(unknowns))
+        print("Unknown language(s):", ", ".join(unknowns), file=sys.stderr)
+        exit(1)
+
+    if args.word:
+        word_list = [(xid, args.word) for xid in search_word(args.word, lids[0])]
+    else:
+        word_list = all_words(lids[0])
+    if not word_list:
+        print("No words found", file=sys.stderr)
         exit(1)
 
     names = [language_name(lid) for lid in lids]
     print("\t".join(names))
-    for xid, spell in sorted(all_words(lids[0]), key=lambda x: x[1].lower()):
+    for xid, spell in sorted(word_list, key=lambda x: x[1].lower()):
         mids = meaning_ids(xid)
         translations = []
         for lid in lids[1:]:
