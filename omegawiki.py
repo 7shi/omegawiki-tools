@@ -112,6 +112,17 @@ class Meaning:
                 for xid, spelling in get_words(self.id, lang.id)]
 
 def translate(target, *languages, uniq=False):
+    """Generates translations for a target word in specified languages.
+    
+    Args:
+        target: The Word object to translate
+        *languages: Language objects to translate into
+        uniq: If True, returns only unique spellings per language
+        
+    Returns:
+        list[list[list[Word]]]: For each language, list of meanings lists containing translated Word objects.
+        When uniq=True, filters out empty meaning lists and ensures unique spellings within a language.
+    """
     target_meanings = target.expression.meanings()
     translations = []
     for lang in languages:
