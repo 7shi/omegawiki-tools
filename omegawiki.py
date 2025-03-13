@@ -9,19 +9,19 @@ def open_db(db):
     cur  = conn.cursor()
     lid_en = language_id("en")
 
-def language_id(name):
+def language_id(code):
     result = cur.execute("""
         SELECT language_id FROM language
         WHERE wikimedia_key = ? OR iso639_3 = ? OR iso639_2 = ?
-        """, (name, name, name)).fetchone()
+        """, (code, code, code)).fetchone()
     if result: return result[0]
     result = cur.execute("""
         SELECT language_id FROM language_names WHERE language_name = ?
-        """, (name,)).fetchone()
+        """, (code,)).fetchone()
     if result: return result[0]
     result = cur.execute("""
         SELECT language_id FROM language_names WHERE language_name LIKE ?
-        """, (name + "%",)).fetchone()
+        """, (code + "%",)).fetchone()
     return result[0] if result else None
 
 def language_name(lid, name_lid=None):
@@ -62,11 +62,75 @@ def meaning_ids(xid):
         """, (xid,))]
 
 def get_words(mid, lid):
-    return [str(row[0]) for row in cur.execute("""
-        SELECT spelling FROM uw_syntrans
+    return [(row[0], str(row[1])) for row in cur.execute("""
+        SELECT uw_syntrans.expression_id, spelling FROM uw_syntrans
         INNER JOIN uw_expression ON uw_syntrans.expression_id = uw_expression.expression_id
         WHERE defined_meaning_id = ? AND language_id = ?
         """, (mid, lid))]
+
+class Language:
+    def __init__(self, id = None, code = None):
+        if id:
+            self.id = id
+        elif code:
+            self.id = language_id(code)
+        else:
+            self.id = None
+        self.name = language_name(self.id) if self.id else ""
+
+    def code(self):
+        return langcode(self.id)
+
+    def words(self):
+        return [Word(Expression(xid), spelling, self)
+                for xid, spelling in all_words(self.id)]
+
+    def lookup(self, spelling):
+        return [Word(Expression(xid), spelling, self)
+                for xid in expression_ids(spelling, self.id)]
+
+class Word:
+    def __init__(self, expression, spelling, language):
+        self.expression = expression
+        self.spelling = spelling
+        self.language = language
+        self.meanings = None
+
+class Expression:
+    def __init__(self, id):
+        self.id = id
+
+    def meanings(self):
+        return [Meaning(mid) for mid in meaning_ids(self.id)]
+
+class Meaning:
+    def __init__(self, id):
+        self.id = id
+
+    def words(self, lang):
+        return [Word(Expression(xid), spelling, lang)
+                for xid, spelling in get_words(self.id, lang.id)]
+
+def translate(target, *languages, uniq=False):
+    target_meanings = target.expression.meanings()
+    translations = []
+    for lang in languages:
+        meanings = []
+        cache = set()
+        for meaning in target_meanings:
+            words = []
+            for w in meaning.words(lang):
+                word = w.spelling
+                if not uniq or word not in cache:
+                    cache.add(word)
+                    words.append(w)
+            meanings.append(words)
+        if not cache:
+            meanings = []
+        elif uniq:
+            meanings = [m for m in meanings if m]
+        translations.append(meanings)
+    return translations
 
 if __name__ == "__main__":
     import argparse, sys
@@ -77,46 +141,32 @@ if __name__ == "__main__":
     parser.add_argument('-w', '--word', help='word to search for')
     args = parser.parse_args()
 
-    db, langs, word = args.db, args.langs, args.word
-
-    open_db(db)
-    lids = []
+    open_db(args.db)
+    languages = []
     unknowns = []
-    for lang in langs:
-        lid = language_id(lang)
-        (lids if lid else unknowns).append(lid)
+    for code in args.langs:
+        lang = Language(code=code)
+        if lang.id:
+            languages.append(lang)
+        else:
+            unknowns.append(code)
     if unknowns:
         print("Unknown language(s):", ", ".join(unknowns), file=sys.stderr)
         exit(1)
 
     if args.word:
-        word_list = [(xid, args.word) for xid in expression_ids(args.word, lids[0])]
+        words = languages[0].lookup(args.word)
     else:
-        word_list = all_words(lids[0])
-    if not word_list:
+        words = languages[0].words()
+    if not words:
         print("No words found", file=sys.stderr)
         exit(1)
 
-    names = [language_name(lid) for lid in lids]
-    print("\t".join(names))
-    for xid, spell in sorted(word_list, key=lambda x: x[1].lower()):
-        mids = meaning_ids(xid)
-        translations = []
-        for lid in lids[1:]:
-            meanings = []
-            translation_words = set()
-            for mid in mids:
-                words = []
-                for word in get_words(mid, lid):
-                    if not args.uniq or word not in translation_words:
-                        translation_words.add(word)
-                        words.append(word)
-                meanings.append(", ".join(words))
-            if translation_words:
-                if args.uniq:
-                    meanings = [m for m in meanings if m]
-                translations.append("; ".join(meanings))
-            else:
-                translations.append("")
+    print("\t".join(lang.name for lang in languages))
+    for word in sorted(words, key=lambda w: w.spelling.lower()):
+        translations = [
+            "; ".join(", ".join(w.spelling for w in ws) for ws in translated)
+            for translated in translate(word, *languages[1:], uniq=args.uniq)
+        ]
         if not args.uniq or any(t for t in translations):
-            print(spell, *translations, sep="\t")
+            print(word.spelling, *translations, sep="\t")
