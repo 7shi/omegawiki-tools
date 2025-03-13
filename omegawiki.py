@@ -68,11 +68,6 @@ def get_words(mid, lid):
         WHERE defined_meaning_id = ? AND language_id = ?
         """, (mid, lid))]
 
-def search_word(word, lid):
-    return [row[0] for row in cur.execute("""
-        SELECT expression_id FROM uw_expression WHERE spelling = ? AND language_id = ?
-        """, (word, lid,))]
-
 if __name__ == "__main__":
     import argparse, sys
     parser = argparse.ArgumentParser(description='OmegaWiki database query tool')
@@ -95,7 +90,7 @@ if __name__ == "__main__":
         exit(1)
 
     if args.word:
-        word_list = [(xid, args.word) for xid in search_word(args.word, lids[0])]
+        word_list = [(xid, args.word) for xid in expression_ids(args.word, lids[0])]
     else:
         word_list = all_words(lids[0])
     if not word_list:
